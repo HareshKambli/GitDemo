@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="source" value="mum"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="mmt.makeMyTrip.SearchFlight">
+        <methods>
+          <include name="action"/>
+          <include name="initDriver"/>
+          <include name="source" invocation-numbers="0"/>
+          <include name="dest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- mmt.makeMyTrip.SearchFlight -->
+      <class name="mmt.makeMyTrip.flightCancellation">
+        <methods>
+          <include name="flightTerms"/>
+          <include name="close"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- mmt.makeMyTrip.flightCancellation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
